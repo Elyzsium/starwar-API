@@ -1,0 +1,102 @@
+ *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+   
+}
+
+body{
+    align-items: center;
+    margin-left: 8%;
+    background-image: url('./asset/galaxy.jpeg');
+}
+
+.star{
+    color: white;
+    font-size: 100px;
+    text-align: center;
+    transition: .3s;
+
+}
+.film h3{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+.star:hover{
+    color: darkblue;
+}
+
+.list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 10px;
+    margin: 10px auto 10px;
+   
+   
+
+}
+.list .item{
+    background-color: #616161;
+    border-radius: 15px;
+    width: 300px;
+    height: 500px;
+    background-image: linear-gradient(to top, blue, #ECECF2);
+    overflow: hidden;
+    margin: 10px;
+    transition: 0.5s;
+    
+
+} 
+
+.list .imgs{
+    display: block;
+    margin: 50px auto 10px;
+    width: 100px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 10px 15px #7E878d;
+}
+
+
+.list .content{
+    padding: 50px;
+    text-align: center;
+   
+    
+}
+.item .content table{
+    text-align: center;
+}
+.item .content table td{
+    padding: 10px 0;
+    border-bottom: 1px solid #AEC0CE;
+}
+
+/* .item .content table td:nth-child(2){
+    
+} */
+
+.info{
+display: none;
+transition: display 0.5s;
+}
+
+.show{
+    display: block;
+}
+
+.btn{
+    height: 3rem ;
+    border: #616161;
+    border-radius: 10px;
+    width: 150px;
+    margin-top: 30px;
+}
+
+.btn:hover{
+    background-color:  blue ;
+    color: white;
+}
